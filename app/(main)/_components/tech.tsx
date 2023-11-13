@@ -52,21 +52,21 @@ interface BallCanvasProps {
 
 const BallCanvas = ({icon}: BallCanvasProps ) => {
     return (
-        // <div className="bg-white rounded-full flex items-center justify-center overflow-hidden">
-        //     <img src={icon.src} alt="" className="object-cover"/>
-        // </div>
-        <Canvas
-            frameloop='demand'
-            dpr={[1, 2]}
-            gl={{ preserveDrawingBuffer: true }}
-        >
-            <Suspense fallback={<CanvasLoader />}>
-                <OrbitControls enableZoom={false} />
-                <Ball icon={icon} />
-            </Suspense>
-
-            <Preload all />
-        </Canvas>
+        <div className="bg-white rounded-full flex items-center justify-center overflow-hidden">
+            <img src={icon.src} alt="" className="object-cover"/>
+        </div>
+        // <Canvas
+        //     frameloop='demand'
+        //     dpr={[1, 2]}
+        //     gl={{ preserveDrawingBuffer: true }}
+        // >
+        //     <Suspense fallback={<CanvasLoader />}>
+        //         <OrbitControls enableZoom={false} />
+        //         <Ball icon={icon} />
+        //     </Suspense>
+        //
+        //     <Preload all />
+        // </Canvas>
     )
 }
 
