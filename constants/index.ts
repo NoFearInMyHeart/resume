@@ -19,6 +19,8 @@ import {
     zhibai,
     shangrui,
     shanqu,
+    smbq,
+    hjqt,
     kkjp,
     niuniu,
     modesens,
@@ -180,37 +182,6 @@ const experiences: experienceItl[] = [
     },
 ];
 
-export interface testimonialItl {
-    testimonial: string
-    name: string
-    designation: string
-    company: string
-    image: string
-}
-const testimonials: testimonialItl[] = [
-    {
-        testimonial: "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
-
 interface projectTagItl {
     name: string
     color: string
@@ -223,6 +194,30 @@ export interface projectItl {
     source_code_link: string
 }
 const projects: projectItl[] = [
+    // {
+    //     name: "闪萌表情(Flutter App)",
+    //     description: "一款图片表情diy制作的工具类App.",
+    //     tags: [
+    //         {
+    //             name: "Flutter",
+    //             color: "blue-text-gradient",
+    //         },
+    //     ],
+    //     image: smbq,
+    //     source_code_link: "http://haipei.weshineapp.com/",
+    // },
+    {
+        name: "火箭取图(Flutter App)",
+        description: "一款表情包原创作者投稿App, 去除其他平台复杂冗余的表情投稿过程，作者从注册到上传第一个作品只需要在一分钟内即可完成.",
+        tags: [
+            {
+                name: "Flutter",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: hjqt,
+        source_code_link: "http://haipei.weshineapp.com/",
+    },
     {
         name: "KK键盘(Hybrid App)",
         description: "一款移动端手机输入法，支持表情斗图，语音包，花样特殊字体，特殊符号等一系列功能，让聊天更有趣.",
@@ -260,12 +255,16 @@ const projects: projectItl[] = [
         source_code_link: "https://modesens.cn/",
     },
     {
-        name: "闪萌表情(PC，微信,QQ,快手平台小程序)",
+        name: "闪萌表情(PC，APP，微信,QQ,快手平台小程序)",
         description: "闪萌是一家中文GIF动图搜索和分发平台，于2016年06月上线，以发现有趣的GIF为目的，致力于让年轻人的交流沟通更有趣.",
         tags: [
             {
                 name: "Nuxt.js",
                 color: "green-text-gradient",
+            },
+            {
+                name: "Flutter",
+                color: "blue-text-gradient",
             },
             {
                 name: "uni-app",
@@ -277,4 +276,4 @@ const projects: projectItl[] = [
     },
 ];
 
-export { navLinks, services, technologies, experiences, testimonials, projects };
+export { navLinks, services, technologies, experiences, projects };
