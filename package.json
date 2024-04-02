@@ -13,9 +13,9 @@
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.12.0",
     "@types/three": "^0.151.0",
-    "framer-motion": "^10.16.4",
-    "maath": "^0.5.2",
-    "next": "14.1.0",
+    "framer-motion": "^11.0.24",
+    "maath": "^0.10.7",
+    "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
     "react-tilt": "^1.0.2",
@@ -26,11 +26,11 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0",
+    "eslint-config-next": "14.1.4",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.3"
   }
 }
