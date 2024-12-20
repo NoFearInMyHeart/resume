@@ -25,7 +25,7 @@ import {
     niuniu,
     modesens,
     shanmeng,
-    threejs, nextjs, nuxtjs,
+    threejs, nextjs, nuxtjs, taro,
 } from "../assets";
 import {StaticImageData} from "next/image";
 
@@ -111,6 +111,10 @@ const technologies: technologyItl[] = [
     {
         name: "Flutter",
         icon: Flutter,
+    },
+    {
+        name: "Taro",
+        icon: taro,
     },
     {
         name: "uni-app",

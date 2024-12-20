@@ -52,7 +52,7 @@ interface BallCanvasProps {
 
 const BallCanvas = ({icon}: BallCanvasProps ) => {
     return (
-        <div className="bg-white rounded-full flex items-center justify-center overflow-hidden">
+        <div className="bg-white rounded-full flex items-center justify-center overflow-hidden size-full">
             <img src={icon.src} alt="" className="object-cover"/>
         </div>
         // <Canvas

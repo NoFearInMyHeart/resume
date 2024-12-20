@@ -59,7 +59,7 @@ const About = () => {
                 className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
             >
                 简单介绍一下，生于95年光棍节，天蝎座♏️，目前是一名前端工程师，年近30，蹉跎中练就了一丢丢的生存吃饭的技能，但是目前还是菜鸡儿🐔一个，努力升级打怪中💪。<br />
-                平常主要用 React, Vue 来搞一些SPA和后台，写 App 的话用 Flutter, 小程序是用 uni-app, 如果涉及到 SSR 服务端渲染的话用过 Nuxt 和 Next, 可以快速学习上手一些框架和类库。
+                平常主要用 React, Vue 来搞一些SPA和后台，写 App 的话用 Flutter, 小程序是用 Taro, uni-app, 如果涉及到 SSR 服务端渲染的话用过 Nuxt 和 Next, 可以快速学习上手一些框架和类库。
                 近期对后端技术有点感兴趣并实践中...
             </motion.p>
 
