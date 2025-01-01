@@ -19,13 +19,15 @@ import {
     zhibai,
     shangrui,
     shanqu,
+    remote,
+    youle,
     smbq,
     hjqt,
     kkjp,
     niuniu,
     modesens,
     shanmeng,
-    threejs, nextjs, nuxtjs, taro,
+    threejs, nextjs, nuxtjs, taro, fastmoss, adsmoss,
 } from "../assets";
 import {StaticImageData} from "next/image";
 
@@ -184,6 +186,29 @@ const experiences: experienceItl[] = [
             "参与代码审查并向其他开发人员提供建设性反馈.",
         ],
     },
+    {
+        title: "前端工程师",
+        company_name: "远程兼职",
+        icon: remote,
+        iconBg: "#383E56",
+        date: "2022.10 - 2023.10",
+        points: [
+            "使用 Uni-app 负责某农副产品公司人力资源管理APP\"诺斯\"相关功能开发和迭代.",
+        ],
+    },
+    {
+        title: "前端工程师",
+        company_name: "北京有乐今天科技",
+        icon: youle,
+        iconBg: "#383E56",
+        date: "2023.11 - 2024.12",
+        points: [
+            "使用 Next.js 技术开发和维护公司 FastMoss 抖音数据分析saas系统 PC和移动端.",
+            "使用 Taro 技术开发和维护公司 FastMoss 小程序端.",
+            "使用 Next.js，Golang 技术开发和维护公司 AdsMoss 广告saas系统.",
+            "使用 Next.js 技术开发和维护公司 YooFinds TikTok 海外电商选品平台.",
+        ],
+    },
 ];
 
 interface projectTagItl {
@@ -195,21 +220,49 @@ export interface projectItl {
     description: string
     tags: projectTagItl[]
     image: StaticImageData
+    is_contain?: boolean,
     source_code_link: string
 }
 const projects: projectItl[] = [
-    // {
-    //     name: "闪萌表情(Flutter App)",
-    //     description: "一款图片表情diy制作的工具类App.",
-    //     tags: [
-    //         {
-    //             name: "Flutter",
-    //             color: "blue-text-gradient",
-    //         },
-    //     ],
-    //     image: smbq,
-    //     source_code_link: "http://haipei.weshineapp.com/",
-    // },
+    {
+        name: "AdsMoss(国际化，Node SSR)",
+        description: "广告数据分析平台，主要包括美国、印尼、越南、泰国、菲律宾、马来西亚、英国、日本、中国台湾、韩国、加拿大、法国等国家地区广告，商品，广告主数据。",
+        tags: [
+            {
+                name: "Next.js",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: adsmoss,
+        is_contain: true,
+        source_code_link: "https://adsmoss.com/ad/ad_list",
+    },
+    {
+        name: "FastMoss(国际化，Node SSR)",
+        description: "TikTok抖音数据分析平台，主要包括美国、英国、印尼、泰国、菲律宾、越南、马来西亚等15+国家地区TikTok数据。",
+        tags: [
+            {
+                name: "Next.js",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: fastmoss,
+        is_contain: true,
+        source_code_link: "https://www.fastmoss.com/zh/dashboard",
+    },
+    {
+        name: "闪萌表情(Flutter App)",
+        description: "集合超多热门表情、实下潮流模板，同时通过机器学习及人工编辑的方法，积累近千万的高质量结构化动图数据的一款图片表情diy制作的工具类App.",
+        tags: [
+            {
+                name: "Flutter",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: smbq,
+        is_contain: true,
+        source_code_link: "https://apps.apple.com/us/app/%E9%97%AA%E8%90%8C%E8%A1%A8%E6%83%85-%E8%81%8A%E5%A4%A9%E6%96%97%E5%9B%BE%E8%A1%A8%E6%83%85%E5%8C%85gif%E5%88%B6%E4%BD%9C%E7%A5%9E%E5%99%A8/id1362975891",
+    },
     {
         name: "火箭取图(Flutter App)",
         description: "一款表情包原创作者投稿App, 去除其他平台复杂冗余的表情投稿过程，作者从注册到上传第一个作品只需要在一分钟内即可完成.",
@@ -247,7 +300,7 @@ const projects: projectItl[] = [
         source_code_link: "http://meta.weshineapp.com/",
     },
     {
-        name: "ModeSens(跨境电商)",
+        name: "ModeSens(跨境电商，国际化，Node SSR)",
         description: "国际化跨境电商, 主营时尚奢侈品领域, 与一些国外时尚领域的电商有合作关系, 主要提供奢侈品信息并且还有合作电商折扣与其他优惠福利信息, 此外可以帮助用户代下单, 以及有自己独立的社区和博文板块.",
         tags: [
             {

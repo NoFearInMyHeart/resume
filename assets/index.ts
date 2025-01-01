@@ -31,6 +31,8 @@ import threejs from "./tech/threejs.svg";
 import zhibai from './company/zhibai.png';
 import shangrui from './company/shangrui.png';
 import shanqu from './company/shanqu.png';
+import remote from './company/remote.svg';
+import youle from './company/youle.png';
 
 import smbq from './smbq.png';
 import hjqt from './hjqt.png';
@@ -38,7 +40,8 @@ import kkjp from './kkjp.png';
 import niuniu from './niuniu.png';
 import modesens from './modesens.png';
 import shanmeng from './shanmengemoji.png';
-
+import fastmoss from './fastmoss.svg';
+import adsmoss from './adsmoss.svg';
 
 export {
     logo,
@@ -71,10 +74,14 @@ export {
     zhibai,
     shangrui,
     shanqu,
+    remote,
+    youle,
     smbq,
     hjqt,
     kkjp,
     niuniu,
     modesens,
     shanmeng,
+    fastmoss,
+    adsmoss,
 };

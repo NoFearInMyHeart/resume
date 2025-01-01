@@ -18,6 +18,7 @@ const ProjectCard = ({index, project}: ProjectCardProps) => {
         description,
         tags,
         image,
+        is_contain = false,
         source_code_link,
     } = project
 
@@ -33,7 +34,7 @@ const ProjectCard = ({index, project}: ProjectCardProps) => {
                 className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
             >
                 <div className="relative w-full h-[230px]">
-                    <img src={image.src} alt={name} className="w-full h-full object-cover rounded-2xl"/>
+                    <img src={image.src} alt={name} className={`w-full h-full ${is_contain ? 'object-contain' : 'object-cover'} rounded-2xl`}/>
 
                     <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                         <div
@@ -81,7 +82,7 @@ const Projects = () => {
                 </motion.p>
             </div>
 
-            <div className='mt-20 flex flex-wrap gap-7'>
+            <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
                 {projects.map((project: projectItl, index: number) => (
                     <ProjectCard key={`project-${index}`} index={index} project={project}/>
                 ))}
