@@ -225,7 +225,7 @@ export interface projectItl {
 }
 const projects: projectItl[] = [
     {
-        name: "AdsMoss(国际化，Node SSR)",
+        name: "AdsMoss(Ai 大模型，国际化，Node SSR)",
         description: "广告数据分析平台，主要包括美国、印尼、越南、泰国、菲律宾、马来西亚、英国、日本、中国台湾、韩国、加拿大、法国等国家地区广告，商品，广告主数据。",
         tags: [
             {
