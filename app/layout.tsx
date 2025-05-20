@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import StatisticsScript from "@/app/(main)/_components/statistics-script";
 
 export const metadata: Metadata = {
   title: 'yzZ',
@@ -21,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <StatisticsScript />
       <body>{children}</body>
     </html>
   )
