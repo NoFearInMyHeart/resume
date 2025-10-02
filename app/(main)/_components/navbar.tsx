@@ -53,7 +53,7 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-                        <a href="/resume.jpeg">简历</a>
+                        <a href="/resume.pdf">简历</a>
                     </li>
                 </ul>
 
@@ -82,7 +82,7 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <li className="font-poppins font-medium cursor-pointer text-[16px] text-secondary">
-                                <a href="/resume.jpeg">简历</a>
+                                <a href="/resume.pdf">简历</a>
                             </li>
                         </ul>
                     </div>
