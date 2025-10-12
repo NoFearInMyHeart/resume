@@ -22,8 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <StatisticsScript />
-      <body>{children}</body>
+      <body>
+        {children}
+        <StatisticsScript />
+      </body>
     </html>
   )
 }
