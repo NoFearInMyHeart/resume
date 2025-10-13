@@ -6,7 +6,17 @@ const StatisticsScript = () => {
             <Script
                 id="cnzz-analytics"
                 strategy="afterInteractive"
-                src="https://v1.cnzz.com/z_stat.php?id=1281418424&web_id=1281418424"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                        var _czc = _czc || [];
+                        (function () {
+                            var um = document.createElement("script");
+                            um.src = "https://s9.cnzz.com/z.js?id=1281438683&async=1";
+                            var s = document.getElementsByTagName("script")[0];
+                            s.parentNode.insertBefore(um, s);
+                        })();
+                    `,
+                }}
             />
         </>
     );
